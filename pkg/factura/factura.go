@@ -2,6 +2,7 @@ package factura
 
 import (
 	"github.com/S-Kiev/composicionGo/pkg/cliente"
+	itemfactura "github.com/S-Kiev/composicionGo/pkg/itemFactura"
 )
 
 type Factura struct {
@@ -11,10 +12,10 @@ type Factura struct {
 	cliente cliente.Cliente
 	//En este slice estoy usando la composicion de Go
 	//porque la catura se compone de muchos items
-	items []itemfactura.ItemFactura
+	items []itemfactura.Item
 }
 
-func New(pais, ciudad string, cliente cliente.Cliente, items []itemfactura.ItemFactura) Factura {
+func New(pais, ciudad string, cliente cliente.Cliente, items []itemfactura.Item) Factura {
 	return Factura{
 		pais:    pais,
 		ciudad:  ciudad,

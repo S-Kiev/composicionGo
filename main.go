@@ -13,7 +13,7 @@ func main() {
 		"Uruguay",
 		"Salto",
 		cliente.New("Ezequiel", "Calle 123", "151365"),
-		[]itemfactura.ItemFactura{
+		[]itemfactura.Item{
 			itemfactura.New(1, "Pan", 12.34),
 			itemfactura.New(1, "Leche", 39.14),
 			itemfactura.New(1, "Carne", 75.21),
